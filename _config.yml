@@ -1,1 +1,130 @@
+title: "ZS 2023 Impact Summit"
+description: Your one-stop shop for planning your event at the Austin Convention Center
+url: //test-zs2.austinconventioncenter.com
+start_date: 2023-10-03
+end_date: 2023-10-05
+preliminary_floor_plan_deadline: 2023-09-02
+digital_sign_submission_deadline: 2023-09-18
+incentive_rate_deadline: 2023-09-02
+sales_manager:
+  name: Necah Cannon, CASE, CMP, CSEP
+  email: necah.cannon@austintexas.gov
+  phone: 5124044241
 theme: 
+remote_theme: cityofaustin/jekyll-theme-kocurek@v0.3.4
+searchable: true
+printable: true
+collections_dir: collections
+collections:
+  posts:
+    output: false
+    section_order: 0
+  event_planning:
+    output: true
+    name: Event Planning, Checklist & Budget
+    section_order: 1
+  exclusive_services:
+    output: true
+    name: Exclusive Services
+    section_order: 2
+  services_and_amenities:
+    output: true
+    name: Services & Amenities
+    section_order: 3
+  event_operations_team:
+    output: true
+    name: ACC Event Operations Team
+    section_order: 4
+  event_insurance:
+    output: true
+    name: Event Insurance
+    section_order: 5
+  event_invoice:
+    output: true
+    name: Event Invoice
+    section_order: 6
+  utilities:
+    output: true
+    name: Utilities
+    section_order: 7
+  technology:
+    output: true
+    name: Technology
+    section_order: 8
+  food_and_beverage:
+    output: true
+    name: F&B / Catering
+    section_order: 9
+  safety_and_security:
+    output: true
+    name: Safety & Security
+    section_order: 10
+  room_specifications:
+    output: true
+    name: Room Specifications
+    section_order: 11
+  move_in_move_out:
+    output: true
+    name: Move In/Show/Move out
+    section_order: 12
+  equipment_labor_and_changeovers:
+    output: true
+    name: Equipment, Labor and Changeovers 
+    section_order: 13
+  signage_rigging_and_decorations:
+    output: true
+    name: Signage, Rigging and decorations
+    section_order: 14
+  digital_sponsorship_and_branding:
+    output: true
+    name: Digital Sponsorship/Branding
+    section_order: 15
+  service_yard:
+    output: true
+    name: Service Yard
+    section_order: 16
+  parking:
+    output: true
+    name: Parking
+    section_order: 17
+  general_service_contractors:
+    output: true
+    name: General Service Contractor Information
+    section_order: 18
+  exhibitor_guidelines_and_tools:
+    output: true
+    name: Exhibitor Guidelines & Tools
+    section_order: 19
+  building_measurements:
+    output: true
+    name: Building Measurements
+    section_order: 20
+  downloadable_resources:
+    output: true
+    name: Downloadable Resources
+    section_order: 21
+permalink: pretty
+defaults:
+  -
+    scope:
+      path: "collections/*/*.md"
+    values:
+      layout: "default"
+      permalink: /:collection/:title
+  -
+    scope:
+      path: "collections/*/index.md"
+    values:
+      layout: "section"
+      permalink: /:collection
+  -
+    scope:
+      path: "index.md"
+    values:
+      layout: "homepage"
+  -
+    scope:
+      path: "pdf.md"
+    values:
+      layout: "pdf"
+
