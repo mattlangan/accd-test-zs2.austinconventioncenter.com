@@ -1,0 +1,6 @@
+---
+title: Event Security
+order: 3
+---
+
+Event security is an exclusive service of the ACC. The Client is responsible for event staffing to secure licensed premises and support areas from the first contract day to the last contract day. A minimum level of event staffing is required for move-in and move-out, concerts, dances, sporting events etc.  The Client is responsible for event security of the areas in the licensed premises of the contract, as well as public areas used for displays, registration and possibly the parking garages. Credit is not given for services ordered and not used. A four (4) hour minimum may be required and charged for labor unless otherwise specified. The ACC determines the number and type of security personnel required for an event. Overtime fees may apply. During move-in and move-out hours of exhibits, a minimum of three (3) Department Security Event Staff and one (1) Licensed Peace Officer (LPO) are required to manage the service yard area.  *The Client/GSC is required to place at least one (1) person at the entrance gate to the service yard to issue dock passes during move-in and move-out.  This person must work in conjunction with the ACC Security Event Staff. Final determination of the number of, type of and duties of personnel required for an event is made by ACC Management.

@@ -1,0 +1,17 @@
+{%- assign team_member = include.team_member -%}
+{%- assign role = include.role -%}
+<h3>{{ role }}</h3>
+<dl>
+  <dt>
+    <p>{{team_member.name}}</p>
+  </dt>
+  <dd>
+    {%- if team_member.email != blank -%}
+      <p><a href="mailto:{{team_member.email}}">{{ team_member.email }}</a></p>
+    {%- endif -%}
+    {%- if team_member.phone != blank -%}
+      {%- assign phone = team_member.phone | split: '' -%}
+      <p>({{ phone[0] }}{{ phone[1] }}{{ phone[2] }}) {{ phone[3] }}{{ phone[4] }}{{ phone[5] }}-{{ phone[6] }}{{ phone[7] }}{{ phone[8] }}{{ phone[9] }}</p>
+    {%- endif -%}
+  </dd>
+</dl>

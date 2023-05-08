@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    {% include navigation.html %}
+    <main id="main_content">
+      <div>
+        {%- if site.banner_image -%}
+          <img src="{{ site.url }}/assets/images/{{ site.banner_image }}" class="homepage-banner-image" aria-hidden=true />
+        {%- endif -%}
+        <p>
+          Welcome {{ site.title }} to your one-stop shop on all things <strong>Planning at the Austin Convention Center</strong>. Please bookmark this site so you can quickly reference it throughout your planning process and feel free to share this site with your team and any contractors as you feel necessary.  
+        </p>
+
+        <h3>This is your Event Operations Team:</h3>  
+        {%- assign event_coordinator = site.event_coordinator -%}
+        {%- assign utility_coordinator = site.utility_coordinator -%}
+        {%- assign security_coordinator = site.security_coordinator -%}
+        {%- assign catering_manager = site.catering_manager -%}
+        {%- assign sales_manager = site.sales_manager -%}
+        {%- assign it_coordinator = site.it_coordinator -%}
+        {%- if event_coordinator != nil -%}
+          {% include team_member.html team_member=event_coordinator role='Event Coordinator' %}
+        {%- endif -%}
+        {%- if utility_coordinator != nil -%}
+          {% include team_member.html team_member=utility_coordinator role='Utility Coordinator' %}
+        {%- endif -%}
+        {%- if security_coordinator != nil -%}
+          {% include team_member.html team_member=security_coordinator role='Security Coordinator' %}
+        {%- endif -%}
+        {%- if catering_manager != nil -%}
+          {% include team_member.html team_member=catering_manager role='Catering Manager' %}
+        {%- endif -%}
+        {%- if sales_manager != nil -%}
+          {% include team_member.html team_member=sales_manager role='Sales Manager' %}
+        {%- endif -%}
+        {%- if it_coordinator != nil -%}
+          {% include team_member.html team_member=it_coordinator role='IT Coordinator' %}
+        {%- endif -%}
+
+        <h3>Important Deadlines:</h3>
+        <dl>
+          <dt>
+            <p>Incentive Rate Deadline</p>
+          </dt>
+          <dd>
+            <p>{{ site.incentive_rate_deadline | date: "%A, %b %e, %Y" }}</p>
+          </dd>
+          <dt>
+            <p>Preliminary Floor Plan Submission Deadline</p>
+          </dt>
+          <dd>
+            <p>{{ site.preliminary_floor_plan_deadline | date: "%A, %b %e, %Y"}}</p>
+          </dd>
+          <dt>
+            <p>Digital Sign Submission Deadline</p>
+          </dt>
+          <dd>
+            <p>{{ site.digital_sign_submission_deadline | date: "%A, %b %e, %Y" }}</p>
+          </dd>
+        </dl>
+        {{ page.content | markdownify }}
+      </div>
+    </main>
+    {% include analytics.html %}
+  </body>
+</html>
